@@ -1,17 +1,22 @@
+/*
+****
+***
+**
+*
+*/
 #include<iostream>
 using namespace std;
 int main() 
 {
-    int n,i=1;
+    int i=1,n,j,star;
     cin>>n;
-
     while (i<=n)
     {
-        int j=1;
-        while (j<=i)
+        star=n-i+1;
+        while (star)
         {
-            cout<<" "<<i;   /* cout<<"*"; To print the star pyramid */
-            j++;
+            cout<<"*";
+            star--;
         }
         cout<<endl;
         i++;

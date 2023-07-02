@@ -1,8 +1,3 @@
-/*  A 
-    B A 
-    C B A 
-    D C B A 
-*/
 #include<iostream>
 using namespace std;
 int main() 
@@ -13,9 +8,11 @@ int main()
     while (i <= n)
     {
         j = 1;
+        char first=char('A'+n- i);
         while (j <= i)
         {
-            cout<<char('A'+ i - j )<<" ";
+            cout<<first<<" ";
+            first++;
             j++;
         }
         cout<<endl;

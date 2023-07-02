@@ -1,22 +1,27 @@
+/*  
+    *    
+    * * 
+    * * * 
+    * * * * 
+*/
 #include<iostream>
 using namespace std;
 int main() 
 {
-    int n;
+    int n,i,j;
     cin>>n;
-    int i=1;
     while (i<=n)
     {
-        int j =1;
-        while (j<=n)
+        j=1;
+        while (j<=i)
         {
-            cout<<" "<<j;
+            cout<<"* ";
             j++;
         }
         cout<<endl;
         i++;
+        
     }
     
-
 return 0;
 }
