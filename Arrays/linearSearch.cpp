@@ -21,6 +21,14 @@ int main()
     }
     cout<<"Enter the numer to be searched: ";
     cin>>x;
-    cout<<"Found at "<<lSearch(arr,size,x);
+    bool res=lSearch(arr,size,x);
+    if (res)
+    {
+        cout<<"Fount at "<<res;
+    }
+    else
+    {
+        cout<<"Not available.";
+    }
 return 0;
 }
