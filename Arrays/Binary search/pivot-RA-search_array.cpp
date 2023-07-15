@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+// the Binary Search function
 int binarySearch(int arr[], int s,int e, int key)
 {
     int low = s;
@@ -25,6 +26,7 @@ int binarySearch(int arr[], int s,int e, int key)
 
     return -1;
 }
+// gettitng the pivot 
 int getpivot(int arr[], int n)
 {
     int s = 0;
@@ -44,6 +46,7 @@ int getpivot(int arr[], int n)
     }
     return s;
 }
+// search in Rotated array
 int search(int arr[],int target,int n){
     int pivot=getpivot(arr,n);
     if (target>=arr[pivot] && target <=arr[n-1])

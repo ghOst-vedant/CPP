@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+// the Binary Search function
 int binarySearch(int arr[], int n, int key)
 {
     int low = 0;
